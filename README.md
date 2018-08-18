@@ -1,8 +1,13 @@
-Introduction
+**Introduction**
+-----------------------
 
 F5® BIG-IP® Cloud EditionTM was built to help network operations teams and applications teams collaborate more effectively in the rapid delivery of secure, appropriately supported applications. BIG-IP Cloud Edition simplifies and centralizes core device and app services management functions like setup, licensing, upgrades, analytics, and scaling. Operations teams can easily define a self-service catalog of application services that developers can then access, on demand, via a dashboard or API call. These services are defined, updated, and deployed for each application in contrast to the traditional, consolidated model in which a single Application Delivery Controller (ADC) supports multiple applications.
 
-Infrastructure Components
+![Deployment Diagram](images/purple_1.png)
+
+**The BIG­IP Cloud Edition Architecture**
+---------------------------
+**Infrastructure Components**
 
 1) BIG-IP Per-App virtual editions (VEs), each dedicated to a single application.
 

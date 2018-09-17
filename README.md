@@ -147,27 +147,27 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 8) Click **Create**. The Create Application screen opens. Type and select appropriate values as follow.
 	
-1. Name: your_environment_name
-2. Description: your_description
-3. Device Template: device template you created in Step 2
-4. Region: The AWS region you deployed for this quick start
-5. VPC: VPC you crreated for this environment
-6. Availability Zone Subnets: The subnets defined for this VPC are listed under Available
-7. Restricted Source Address: The CIDR range you allow to access this SSG
-8. SSH Key Name: EC2 Key pair
-9. Services to Deploy: F5 services you want to deploy on SSG (LTM/ASM/AVR)
-10. License Type: BYOL or Utility
-11. AMI Image: Select the latest version
-12. Instance Type: EC2 instance type for SSG
+	1. Name: your_environment_name
+	2. Description: your_description
+	3. Device Template: device template you created in Step 2
+	4. Region: The AWS region you deployed for this quick start
+	5. VPC: VPC you crreated for this environment
+	6. Availability Zone Subnets: The subnets defined for this VPC are listed under Available
+	7. Restricted Source Address: The CIDR range you allow to access this SSG
+	8. SSH Key Name: EC2 Key pair
+	9. Services to Deploy: F5 services you want to deploy on SSG (LTM/ASM/AVR)
+	10. License Type: BYOL or Utility
+	11. AMI Image: Select the latest version
+	12. Instance Type: EC2 instance type for SSG
 
 _If you selected BYOL, supply the following information_
 	
-13. BIG-IQ IP Address: Type BIG-IQ IP address
-14. BIG-IQ User: Type "admin"
-15. BIG-IQ Password: Type admin password
-16. BIG-IQ License Pool Name: Type license name you input on 5)
-17. Offering Name: leave as blank
-18. Unit of Measure: Hourly
+	13. BIG-IQ IP Address: Type BIG-IQ IP address
+	14. BIG-IQ User: Type "admin"
+	15. BIG-IQ Password: Type admin password
+	16. BIG-IQ License Pool Name: Type license name you input on 5)
+	17. Offering Name: leave as blank
+	18. Unit of Measure: Hourly
 
 ![Deployment Diagram](images/cloudenv1.jpg)
 

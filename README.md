@@ -104,14 +104,14 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 4) Create a classic elastic load balancer (ELB) as tier1 service scaler to distribute requests from Internet to BIG-IP VE of SSG.
 
-1. ELB Type: Classic Load Balancer
-2. Health Checks: 
+	1. ELB Type: Classic Load Balancer
+	2. Health Checks: 
        * Ping protocol:TCP
        * Ping port: 22
        * Timeout: 5 seconds
        * Interval: 30 seconds
-3. EC2 Instances: Enabled Cross-Zone Load Balancing and Connection Draining at 300 seconds.
-4. Edit the ELB listeners to remove the default listener (Load Balancer Protocol and Instance Protocol of HTTP on port 80).
+	3. EC2 Instances: Enabled Cross-Zone Load Balancing and Connection Draining at 300 seconds.
+	4. Edit the ELB listeners to remove the default listener (Load Balancer Protocol and Instance Protocol of HTTP on port 80).
 
 **Step 2. Create device template for BIG-IP VE**
 

@@ -1,5 +1,5 @@
 **Introduction**
------------------------
+--------------------
 
 F5® BIG-IP® Cloud EditionTM was built to help network operations teams and applications teams collaborate more effectively in the rapid delivery of secure, appropriately supported applications. BIG-IP Cloud Edition simplifies and centralizes core device and app services management functions like setup, licensing, upgrades, analytics, and scaling. Operations teams can easily define a self-service catalog of application services that developers can then access, on demand, via a dashboard or API call. These services are defined, updated, and deployed for each application in contrast to the traditional, consolidated model in which a single Application Delivery Controller (ADC) supports multiple applications.
 
@@ -94,9 +94,9 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 1) VPC Configurations
 
-	1. Create VPC with 2 subnets in different AZs and unique CIDR
-	2. Create Internet gateway and attach it to VPC
-	3. Create route table for each subnet with default route
+* Create VPC with 2 subnets in different AZs and unique CIDR
+* Create Internet gateway and attach it to VPC
+* Create route table for each subnet with default route
 	
 2) Create a key pair to allow SSH access
 
@@ -104,14 +104,14 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 4) Create a classic elastic load balancer (ELB) as tier1 service scaler to distribute requests from Internet to BIG-IP VE of SSG.
 
-	1. ELB Type: Classic Load Balancer
-	2. Health Checks: 
-       Ping protocol:TCP
-       Ping port: 22
-       Timeout: 5 seconds
-       Interval: 30 seconds
-    3. EC2 Instances: Enabled Cross-Zone Load Balancing and Connection Draining at 300 seconds.
-    4. Edit the ELB listeners to remove the default listener (Load Balancer Protocol and Instance Protocol of HTTP on port 80).
+1. ELB Type: Classic Load Balancer
+2. Health Checks: 
+       * Ping protocol:TCP
+       * Ping port: 22
+       * Timeout: 5 seconds
+       * Interval: 30 seconds
+3. EC2 Instances: Enabled Cross-Zone Load Balancing and Connection Draining at 300 seconds.
+4. Edit the ELB listeners to remove the default listener (Load Balancer Protocol and Instance Protocol of HTTP on port 80).
 
 **Step 2. Create device template for BIG-IP VE**
 
@@ -147,25 +147,27 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 8) Click **Create**. The Create Application screen opens. Type and select appropriate values as follow.
 	
-	Name: your_environment_name
-	Description: your_description
-	Device Template: device template you created in Step 2
-	Region: The AWS region you deployed for this quick start
-	VPC: VPC you crreated for this environment
-	Availability Zone Subnets: The subnets defined for this VPC are listed under Available
-	Restricted Source Address: The CIDR range you allow to access this SSG
-	SSH Key Name: EC2 Key pair
-	Services to Deploy: F5 services you want to deploy on SSG (LTM/ASM/AVR)
-	License Type: BYOL or Utility
-	AMI Image: Select the latest version
-	Instance Type: EC2 instance type for SSG
-	**If you selected BYOL, supply the following information**
-	BIG-IQ IP Address: Type BIG-IQ IP address
-	BIG-IQ User: Type "admin"
-	BIG-IQ Password: Type admin password
-	BIG-IQ License Pool Name: Type license name you input on 5)
-	Offering Name: leave as blank
-	Unit of Measure: Hourly
+1. Name: your_environment_name
+2. Description: your_description
+3. Device Template: device template you created in Step 2
+4. Region: The AWS region you deployed for this quick start
+5. VPC: VPC you crreated for this environment
+6. Availability Zone Subnets: The subnets defined for this VPC are listed under Available
+7. Restricted Source Address: The CIDR range you allow to access this SSG
+8. SSH Key Name: EC2 Key pair
+9. Services to Deploy: F5 services you want to deploy on SSG (LTM/ASM/AVR)
+10. License Type: BYOL or Utility
+11. AMI Image: Select the latest version
+12. Instance Type: EC2 instance type for SSG
+
+_If you selected BYOL, supply the following information_
+	
+13. BIG-IQ IP Address: Type BIG-IQ IP address
+14. BIG-IQ User: Type "admin"
+15. BIG-IQ Password: Type admin password
+16. BIG-IQ License Pool Name: Type license name you input on 5)
+17. Offering Name: leave as blank
+18. Unit of Measure: Hourly
 
 ![Deployment Diagram](images/cloudenv1.jpg)
 

@@ -22,9 +22,9 @@ Customers can use BIG-IQ Centralized Management to create Auuto-Scaling BIG-IP V
 
 1) Cloud providers - BIG-IP Cloud Edition supports deployment and auto scale of BIG-IP instances on the following cloud platforms:
 
-. Amazon Web Services (AWS)
+* Amazon Web Services (AWS)
  
-. VMware vCenter-based private clouds
+* VMware vCenter-based private clouds
 
 2) Device templates - Device templates define all infrastructure-level characteristics (time zone, DNS, hostname, accounts, NTP, licensing, networking, etc.) that are required to deploy a BIG-IP device.
 
@@ -36,19 +36,19 @@ Customers can use BIG-IQ Centralized Management to create Auuto-Scaling BIG-IP V
 
 To start auto-scaling BIG-IP VE devices for application in AWS, you need to complete these procedures.
 
-Step 1. Set up AWS environment
+* Step 1. Set up AWS environment
 
-Step 2. Create device template for BIG-IP VE
+* Step 2. Create device template for BIG-IP VE
 
-Step 3. Add cloud and environment to BIG-IQ
+* Step 3. Add cloud and environment to BIG-IQ
 
-Step 4. Create a service scaling group
+* Step 4. Create a service scaling group
 
-Step 5. Create service template
+* Step 5. Create service template
 
-Step 6. Addign permissions to users (option)
+* Step 6. Addign permissions to users (option)
 
-Step 7. Create and deploy an application
+* Step 7. Create and deploy an application
 
 
 **Deploy BIG-IP Cloud Edition in AWS**
@@ -146,8 +146,8 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 7) At the top of the screen, click **Applications** then, on the left, click **ENVIRONMENTS** > **Cloud Environments**.
 
 8) Click **Create**. The Create Application screen opens. Type and select appropriate values as follow.
-
-	1. Name: your_environment_name
+	
+	Name: your_environment_name
 	Description: your_description
 	Device Template: device template you created in Step 2
 	Region: The AWS region you deployed for this quick start

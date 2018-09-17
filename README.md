@@ -145,7 +145,9 @@ The full access permissions you need to be granted are Auto Scale Groups, Instan
 
 7) At the top of the screen, click **Applications** then, on the left, click **ENVIRONMENTS** > **Cloud Environments**.
 
-8) Click **Create**. The Create Application screen opens. Type and select appropriate values as follow.
+8) Click **Create**. The Create Application screen opens. 
+
+Type and select appropriate values as follow.
 	
 	1. Name: your_environment_name
 	2. Description: your_description
